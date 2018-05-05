@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Top 50 Popular TV Shows">
+    <meta name="keywords" content="TV Shows, Top 50 Shows, Popular Shows, Show Search">
+    <meta name="author" content="Jelena Marjanovic">
+    <title>BitShow</title>
+
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar justify-content-between navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="./index.html">BitShow</a>
+            <form class="form-inline">
+                <input id="search-show" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <ul id="search-result"></ul>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Popular Shows</h1>
+        <div id="top-50" class="row"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; BIT Student by Jelena Marjanovic, 2018</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Custom JS scripts -->
+    <script src="./js/app-data.js"></script>
+    <script src="./js/app-ui.js"></script>
+    <script src="./js/app-main.js"></script>
+    <!-- Starting JS function -->
+    <script>
+        mainModule.init();
+    </script>
+</body>
+
+</html>
