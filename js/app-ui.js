@@ -16,14 +16,14 @@ const uiModule = (() => {
             const $poster = $('<img>');
             const $title = $('<p>');
             $divColumn.addClass('col-12 col-md-6 col-xl-4');
-            $divShow.addClass('singleShow');
+            $divShow.addClass('singleShow hoverDiv');
             $poster.attr('id', show.id);
             $poster.attr('src', show.poster);
             $poster.attr('alt', show.title);
             $title[0].textContent = show.title;
             $divShow.append($poster);
             $divShow.append($title);
-            $divShow.addClass("single-show");
+            // $divShow.addClass("single-show");
             $divColumn.append($divShow);
             $(DOMSelectors.top50DivOutput).append($divColumn);
         });

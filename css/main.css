@@ -27,6 +27,8 @@
       font-size: 1.25rem;
       font-weight: bold;
       padding: 10px; }
+  .container .hoverDiv:hover {
+    background: rgba(52, 58, 64, 0.25); }
 
 h1 {
   text-align: center;
